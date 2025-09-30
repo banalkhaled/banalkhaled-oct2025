@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bana Alkhaled - Influencer Marketing Coach</title>
+
+    <!-- Tailwind + Fonts (unchanged) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,21 +22,12 @@
         },
       }
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/"
-  }
-}
-</script>
-<!-- Add Babel to transpile JSX and TypeScript in the browser -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
+  </head>
+
   <body class="bg-white">
     <div id="root"></div>
-    <!-- Changed script type to "text/babel" and added presets for React/TypeScript -->
-    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
+
+    <!-- Let Vite load and bundle your app -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
